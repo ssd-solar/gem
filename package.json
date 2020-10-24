@@ -1,0 +1,52 @@
+{
+  "name": "@ssd-solar/gem",
+  "version": "0.0.1",
+  "description": "@ssd-solar/gem is the base for all web related projects using the hapi,vue,celarium,aurium stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -A",
+    "cov": "nyc mocha",
+    "lint": "eslint .",
+    "fix": "eslint --fix .",
+    "start": "parcel start   ",
+    "build": "rm -rf dist && parcel build   "
+  },
+  "author": "Maciej Krüger <mkg20001@gmail.com>",
+  "license": "MPL-2.0",
+  "template": {
+    "extends": [
+      "nodeEslint",
+      "parcelEslint"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-ipfs": "*",
+    "eslint-config-oclif": "*",
+    "mkgs-tool": "^0.1.12",
+    "mocha": "*",
+    "nyc": "*"
+  },
+  "dependencies": {
+    "@forevolve/bootstrap-dark": "^1.0.0-alpha.1091",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@hapi/hapi": "^20.0.1",
+    "@hapi/inert": "^6.0.3",
+    "@sentry/browser": "^5.27.1",
+    "celarium": "mkg20001/celarium#dev",
+    "hapi-pino": "^8.3.0",
+    "hapi-sentry": "^3.1.0",
+    "hapi-spa-serve": "^0.1.1",
+    "joi": "^17.2.1",
+    "jquery": "^3.5.1",
+    "pino": "^6.7.0",
+    "relish": "^3.0.0",
+    "sweetalert2": "^10.6.1",
+    "vue": "^2.6.12",
+    "vue-global-options": "^1.0.1",
+    "vue-i18n": "^8.22.1",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.4.7",
+    "whatwg-fetch": "^3.4.1"
+  }
+}
