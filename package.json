@@ -25,6 +25,7 @@
     "eslint-config-oclif": "*",
     "mkgs-tool": "^0.1.12",
     "mocha": "*",
+    "mongoose": "^5.10.10",
     "nyc": "*"
   },
   "dependencies": {
@@ -41,7 +42,7 @@
     "jquery": "^3.5.1",
     "pino": "^6.7.0",
     "relish": "^3.0.0",
-    "sweetalert2": "^10.6.1",
+    "sweetalert2": "^10.8.1",
     "vue": "^2.6.12",
     "vue-global-options": "^1.0.1",
     "vue-i18n": "^8.22.1",
