@@ -1,9 +1,9 @@
 'use strict'
 
-const Hapi = require('@hapi/hapi')
+// const Hapi = require('@hapi/hapi')
 // const CatboxMongoDB = require('catbox-mongodb')
 const Joi = require('joi')
-const celarium = require('celarium').jit().compileAndInit
+const celarium = require('celarium')
 
 const pino = require('pino')
 
@@ -14,7 +14,8 @@ const Relish = require('relish')({
 })
 
 const init = ({
-  appName, frontend, celariumModel, dbBackend,
+  appName, frontend,
+  celariumModel, celariumCompiled, dbBackend,
   onStartup, onShutdown,
 }) =>
   async config => {
@@ -30,12 +31,21 @@ const init = ({
 
     config.api.getUser = () => 0 // TODO: add auth
 
+    let cRes
+    const cConfig = {db: config.db, api: config.api}
+
+    if (celariumModel) {
+      cRes = await celarium.jit().compileAndInit(celariumModel, {api: 'hapi', db: dbBackend, beautify: false}, cConfig)
+    } else {
+      cRes = await require(celariumCompiled)(cConfig)
+    }
+
     const {
       start,
       stop,
       DBM,
       API,
-    } = await celarium(celariumModel, {api: 'hapi', db: dbBackend, beautify: false}, {db: config.db, api: config.api})
+    } = cRes
 
     const server = API._hapi
 
