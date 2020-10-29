@@ -34,7 +34,7 @@
     "@hapi/hapi": "^20.0.1",
     "@hapi/inert": "^6.0.3",
     "@sentry/browser": "^5.27.1",
-    "celarium": "mkg20001/celarium#dev",
+    "celarium": "github:mkg20001/celarium#dev",
     "hapi-pino": "^8.3.0",
     "hapi-sentry": "^3.1.0",
     "hapi-spa-serve": "^0.1.1",
@@ -49,5 +49,13 @@
     "vue-resource": "^1.5.1",
     "vue-router": "^3.4.7",
     "whatwg-fetch": "^3.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssd-solar/gem.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssd-solar/gem/issues"
+  },
+  "homepage": "https://github.com/ssd-solar/gem#readme"
 }
