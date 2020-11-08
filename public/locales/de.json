@@ -1,0 +1,24 @@
+{
+  "404": {
+    "title": "Nicht gefunden",
+    "desc": "Diese Seite wurde nicht gefunden!"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "desc": "Hier können die Einstellungen geändert werden",
+    "lang": "Sprache",
+    "dark": "Dunkler Modus",
+    "dark_desc": "Dunklen Modus aktivieren",
+    "locale": {
+      "en": "Englisch (English)",
+      "de": "Deutsch"
+    }
+  },
+  "login": {
+    "title": "Anmelden",
+    "username": "Benutzername",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "error": "Fehler beim Anmelden!"
+  }
+}
