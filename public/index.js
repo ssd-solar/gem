@@ -64,6 +64,8 @@ export function mergeDeep(target, ...sources) {
 // Code copied from linked Stack Overflow question
 // https://stackoverflow.com/questions/27936772/how-to-deep-merge-instead-of-shallow-merge
 
+const sharedMessages = require('./locales')
+
 export default ({
   messages,
   api,
@@ -78,7 +80,10 @@ export default ({
     })
   }
 
-  messages = mergeDeep(require('./locales'), messages)
+  messages = Object.keys(messages).map(key => [key, mergeDeep(messages[key], sharedMessages[key] || {})]).reduce((out, next) => {
+    out[next[0]] = next[1]
+    return out
+  }, {})
 
   Vue.use(VueResource)
   Vue.use(GlobalOptions, ['api', 'config', 'user', 'ui'])
