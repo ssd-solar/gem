@@ -34,7 +34,7 @@
     "@hapi/hapi": "^20.0.1",
     "@hapi/inert": "^6.0.3",
     "@sentry/browser": "^5.27.3",
-    "celarium": "github:mkg20001/celarium#dev",
+    "celarium": "github:mkg20001/celarium#master",
     "hapi-pino": "^8.3.0",
     "hapi-sentry": "^3.1.0",
     "hapi-spa-serve": "^0.1.1",
