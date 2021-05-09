@@ -1,6 +1,6 @@
 {
   "name": "@ssd-solar/gem",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "@ssd-solar/gem is the base for all web related projects using the hapi,vue,celarium,aurium stack",
   "main": "index.js",
   "scripts": {
