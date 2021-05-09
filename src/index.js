@@ -9,7 +9,7 @@ const pino = require('pino')
 
 // const mongoose = require('mongoose')
 
-const Relish = require('relish')({
+const Relish = require('relish2')({
   messages: {}
 })
 

@@ -41,6 +41,7 @@
     "joi": "^17.4.0",
     "jquery": "^3.6.0",
     "pino": "^6.11.3",
+    "relish2": "^3.0.2",
     "sweetalert2": "^10.16.7",
     "vue": "^2.6.12",
     "vue-global-options": "^1.0.1",
