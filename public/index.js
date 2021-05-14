@@ -10,9 +10,6 @@ import VueI18n from 'vue-i18n'
 
 import syncedData from './synced-data'
 
-import '@forevolve/bootstrap-dark/scss/toggle-bootstrap.scss'
-import '@forevolve/bootstrap-dark/scss/toggle-bootstrap-dark.scss'
-
 import '@fortawesome/fontawesome-free/css/all.min.css'
 
 import './css/spinner.scss'
