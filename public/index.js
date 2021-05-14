@@ -1,6 +1,6 @@
 /* eslint-disable node/no-unsupported-features/es-syntax */
 
-import Vue from 'vue/dist/vue.esm.js'
+import Vue from 'vue'
 
 import * as Sentry from '@sentry/browser'
 import VueResource from 'vue-resource'
